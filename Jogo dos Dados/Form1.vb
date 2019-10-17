@@ -1,14 +1,9 @@
-﻿Public Class FormJogodosDados
+﻿Public Class FormJogoparouimpar
     Dim dado1, dado2 As Integer
     Dim random As Random
-
-
-
-
     Private Sub BtnRoda_Click(sender As Object, e As EventArgs) Handles btnRoda.Click
         tmrTempo.Start()
     End Sub
-
     Private Sub TmrTempo_Tick(sender As Object, e As EventArgs) Handles tmrTempo.Tick
         random = New Random
         prgProgressBar.Increment(5)
