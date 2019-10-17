@@ -23,6 +23,7 @@ Partial Class FormJogoparouimpar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormJogoparouimpar))
         Me.prgProgressBar = New System.Windows.Forms.ProgressBar()
         Me.btnRoda = New System.Windows.Forms.Button()
         Me.picDado1 = New System.Windows.Forms.PictureBox()
@@ -43,7 +44,7 @@ Partial Class FormJogoparouimpar
         '
         'btnRoda
         '
-        Me.btnRoda.Location = New System.Drawing.Point(194, 288)
+        Me.btnRoda.Location = New System.Drawing.Point(198, 287)
         Me.btnRoda.Name = "btnRoda"
         Me.btnRoda.Size = New System.Drawing.Size(197, 87)
         Me.btnRoda.TabIndex = 1
@@ -91,6 +92,7 @@ Partial Class FormJogoparouimpar
         Me.Controls.Add(Me.btnRoda)
         Me.Controls.Add(Me.prgProgressBar)
         Me.Controls.Add(Me.picDado1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FormJogoparouimpar"
         Me.Text = "Jogo do Par ou Impar"
         CType(Me.picDado1, System.ComponentModel.ISupportInitialize).EndInit()
